@@ -12,7 +12,7 @@ function start(){
 }
 
 function generateRandomNumber(){
-    return 42;
+    Math.floor(Math.random()*100)
 }
 
 function recieveGuess(event){
@@ -37,6 +37,7 @@ function checkGuess(guess){
 
 function guessIsCorrect(){
     console.log("No fooling you :)")
+    document.querySelector("#guess-form").remove();
 }
 
 function guessIsTooLow(){
